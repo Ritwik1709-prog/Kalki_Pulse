@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import Lenis from "lenis";
-import Preloader from "../components/ui/Preloader";
+import KalkiPulseForgeSplash from "../components/ui/KalkiPulseForgeSplash";
 import Navbar from "../components/sections/Navbar";
 import HeroSection from "../components/sections/HeroSection";
 import TelemetryMarquee from "../components/sections/TelemetryMarquee";
@@ -36,8 +36,8 @@ export default function LandingPage() {
   };
 
   return (
-    <>
-      {!ready && <Preloader done={() => setReady(true)} />}
+    <div className="relative min-h-screen bg-[#030306] text-white">
+      {!ready && <KalkiPulseForgeSplash onComplete={() => setReady(true)} />}
       <Navbar />
       <HeroSection spike={spike} />
       <TelemetryMarquee />
@@ -45,6 +45,6 @@ export default function LandingPage() {
       <GoalsPipelineSection />
       <BenefitsBentoSection />
       <FinaleCtaFooter />
-    </>
+    </div>
   );
 }

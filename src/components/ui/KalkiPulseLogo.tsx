@@ -572,27 +572,39 @@ export default function KalkiPulseLogo({
       {/* LUXURY BRAND WORDMARK LOCKUP (Right of Reactor)           */}
       {/* ========================================================= */}
       <div className="flex flex-col justify-center select-none text-left leading-none">
-        {/* Top Row: KALKI // PULSE */}
-        <div className="relative flex items-center font-display font-extrabold text-[17.5px] tracking-[0.14em] uppercase">
-          {/* Base Layer: KALKI */}
+        {/* Top Row: KALKI PULSE */}
+        <div className="relative flex items-center font-display tracking-[0.16em] uppercase">
+          {/* Base Layer: KALKI (Chiseled Titanium Metallic) */}
           <span
-            className="bg-clip-text text-transparent transition-all duration-300"
+            className="font-black text-[17.5px] bg-clip-text text-transparent transition-all duration-300"
             style={{
               backgroundImage:
-                "linear-gradient(135deg, #FFFFFF 0%, #E2E8F0 25%, #94A3B8 50%, #FFFFFF 75%, #CBD5E1 100%)",
-              backgroundSize: "200% auto",
+                "linear-gradient(180deg, #FFFFFF 0%, #F1F5F9 42%, #94A3B8 68%, #E2E8F0 100%)",
+              letterSpacing: "0.19em",
+              filter: "drop-shadow(0 1px 2px rgba(0,0,0,0.45))",
             }}
           >
             KALKI
           </span>
 
-          {/* Thin Angled Plasma Slash Divider */}
-          <span className="mx-1.5 text-cyan-400/60 font-mono text-xs font-normal tracking-tighter">
-            //
+          {/* Precision Quantum Micro-Separator (High-End Horology Diamond Node) */}
+          <span className="mx-2.5 flex items-center justify-center pointer-events-none" aria-hidden="true">
+            <span className="relative flex size-1.5 items-center justify-center">
+              <span className="absolute size-full rotate-45 rounded-[0.5px] bg-[#00F0FF] opacity-75 shadow-[0_0_8px_#00F0FF] animate-pulse" />
+              <span className="relative size-0.5 rounded-full bg-white" />
+            </span>
           </span>
 
-          {/* PULSE with Drop-Shadow Glow & Cipher Scramble Settle */}
-          <span className="text-[#00F0FF] tracking-[0.18em] drop-shadow-[0_0_12px_rgba(0,240,255,0.45)] transition-colors duration-200">
+          {/* PULSE with High-End Futuristic Holographic Luminescence */}
+          <span
+            className="font-extrabold text-[17.5px] bg-clip-text text-transparent transition-all duration-300"
+            style={{
+              backgroundImage:
+                "linear-gradient(135deg, #00F0FF 0%, #38BDF8 45%, #00F0FF 80%, #A5F3FC 100%)",
+              letterSpacing: "0.22em",
+              filter: "drop-shadow(0 0 14px rgba(0,240,255,0.5))",
+            }}
+          >
             {cipherPulse}
           </span>
 
@@ -602,97 +614,106 @@ export default function KalkiPulseLogo({
               {/* Cyan Split Offset (-1.5px) */}
               <span
                 aria-hidden="true"
-                className="absolute inset-0 flex items-center font-display font-extrabold text-[17.5px] tracking-[0.14em] uppercase text-[#00F0FF] opacity-80 pointer-events-none"
+                className="absolute inset-0 flex items-center font-display text-[17.5px] uppercase text-[#00F0FF] opacity-75 pointer-events-none"
                 style={{
                   transform: "translateX(-1.5px)",
                   clipPath: "inset(20% 0 40% 0)",
+                  letterSpacing: "0.19em",
                 }}
               >
-                <span>KALKI</span>
-                <span className="mx-1.5 text-cyan-400 font-mono text-xs">//</span>
-                <span className="tracking-[0.18em]">{cipherPulse}</span>
+                <span className="font-black">KALKI</span>
+                <span className="mx-2.5 opacity-50">✦</span>
+                <span className="font-extrabold" style={{ letterSpacing: "0.22em" }}>{cipherPulse}</span>
               </span>
 
               {/* Laser Rose Split Offset (+1.5px) */}
               <span
                 aria-hidden="true"
-                className="absolute inset-0 flex items-center font-display font-extrabold text-[17.5px] tracking-[0.14em] uppercase text-[#FF2A85] opacity-80 pointer-events-none"
+                className="absolute inset-0 flex items-center font-display text-[17.5px] uppercase text-[#FF2A85] opacity-75 pointer-events-none"
                 style={{
                   transform: "translateX(1.5px)",
                   clipPath: "inset(45% 0 15% 0)",
+                  letterSpacing: "0.19em",
                 }}
               >
-                <span>KALKI</span>
-                <span className="mx-1.5 text-rose-400 font-mono text-xs">//</span>
-                <span className="tracking-[0.18em]">{cipherPulse}</span>
+                <span className="font-black">KALKI</span>
+                <span className="mx-2.5 opacity-50">✦</span>
+                <span className="font-extrabold" style={{ letterSpacing: "0.22em" }}>{cipherPulse}</span>
               </span>
             </>
           )}
         </div>
 
-        {/* Bottom Micro-Row: BY KALKI SAAS + Live Telemetry Heartbeat Waveform */}
+        {/* Bottom Micro-Row: BY KALKI SAAS + Precision Oscilloscope Trace */}
         <div className="flex items-center gap-2 mt-1">
-          <span className="font-mono text-[9px] font-semibold tracking-[0.24em] text-slate-400 uppercase">
+          <span className="font-mono text-[8.5px] font-medium tracking-[0.26em] text-slate-400/90 uppercase">
             BY KALKI SAAS
           </span>
 
-          {/* Live Animated SVG Heartbeat / Pulse Waveform (28px × 10px) */}
+          {/* Ultra-Fine Precision Divider */}
+          <span className="h-2 w-px bg-slate-700/60" aria-hidden="true" />
+
+          {/* Live Precision Animated SVG Heartbeat / Pulse Waveform (32px × 10px) */}
           <div
-            className="relative w-7 h-2.5 flex items-center"
+            className="relative w-8 h-2.5 flex items-center"
             title="Live Telemetry Engine Active"
           >
-            <svg viewBox="0 0 28 10" className="w-full h-full overflow-visible">
+            <svg viewBox="0 0 32 10" className="w-full h-full overflow-visible">
               <defs>
                 <linearGradient id="liveWaveGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-                  <stop offset="0%" stopColor="#10B981" />
-                  <stop offset="50%" stopColor="#00F0FF" />
-                  <stop offset="100%" stopColor="#10B981" />
+                  <stop offset="0%" stopColor="#00F0FF" stopOpacity="0.2" />
+                  <stop offset="40%" stopColor="#00F0FF" />
+                  <stop offset="70%" stopColor="#10B981" />
+                  <stop offset="100%" stopColor="#00F0FF" stopOpacity="0.2" />
                 </linearGradient>
               </defs>
 
-              {/* Background Reference Trace */}
+              {/* Background Reference Track */}
               <path
-                d="M 0 5 L 6 5 L 8 6.5 L 12 1 L 14 8.5 L 17 5 Q 19 3.5 21 5 L 28 5"
+                d="M 0 5 L 8 5 L 10 6.5 L 14 1 L 16 8.5 L 19 5 L 32 5"
                 fill="none"
                 stroke="rgba(0, 240, 255, 0.22)"
-                strokeWidth="0.9"
+                strokeWidth="0.8"
                 strokeLinecap="round"
                 strokeLinejoin="round"
               />
 
-              {/* Live Tracing Active Beam */}
+              {/* Active Laser Pulse Trace */}
               <motion.path
-                d="M 0 5 L 6 5 L 8 6.5 L 12 1 L 14 8.5 L 17 5 Q 19 3.5 21 5 L 28 5"
+                d="M 0 5 L 8 5 L 10 6.5 L 14 1 L 16 8.5 L 19 5 L 32 5"
                 fill="none"
                 stroke="url(#liveWaveGrad)"
                 strokeWidth="1.2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                strokeDasharray="8 26"
-                animate={{ strokeDashoffset: [34, 0] }}
+                strokeDasharray="10 30"
+                animate={{ strokeDashoffset: [40, 0] }}
                 transition={{
                   repeat: Infinity,
-                  duration: 1.4,
+                  duration: 1.5,
                   ease: "linear",
                 }}
-                className="drop-shadow-[0_0_4px_#00F0FF]"
+                className="drop-shadow-[0_0_5px_#00F0FF]"
               />
 
-              {/* Real-time Photon Pulse Node */}
+              {/* Real-time Photon Node */}
               <motion.circle
+                cx={0}
+                cy={5}
                 r="1.2"
-                fill="#10B981"
-                className="drop-shadow-[0_0_5px_#10B981]"
+                fill="#00F0FF"
+                className="drop-shadow-[0_0_6px_#00F0FF]"
+                initial={{ cx: 0, cy: 5, opacity: 0.3 }}
                 animate={{
-                  cx: [0, 6, 8, 12, 14, 17, 21, 28],
-                  cy: [5, 5, 6.5, 1, 8.5, 5, 5, 5],
-                  opacity: [0.2, 0.9, 1, 1, 1, 0.9, 0.7, 0.2],
+                  cx: [0, 8, 10, 14, 16, 19, 32],
+                  cy: [5, 5, 6.5, 1, 8.5, 5, 5],
+                  opacity: [0.3, 0.9, 1, 1, 1, 0.9, 0.3],
                 }}
                 transition={{
                   repeat: Infinity,
-                  duration: 1.4,
+                  duration: 1.5,
                   ease: "easeInOut",
-                  times: [0, 0.22, 0.3, 0.44, 0.52, 0.63, 0.78, 1],
+                  times: [0, 0.25, 0.32, 0.44, 0.52, 0.62, 1],
                 }}
               />
             </svg>
