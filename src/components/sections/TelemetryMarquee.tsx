@@ -1,0 +1,3 @@
+const T=["NYKAA HISTORICAL BASELINE","TIRA BEAUTY DATA","PURPLLE CONVERSION CURVES","APACHE KAFKA + PROTOBUF","REDIS <1MS FEATURE STORE","XGBOOST / LIGHTGBM ONNX","SHAP EXPLAINABILITY","IQR BOT-SPIKE FILTERING"];
+const Row=({rev}:{rev?:boolean})=><div className="flex w-max num text-xs text-slate-400" style={{animation:`mq 40s linear infinite ${rev?"reverse":""}`}}>{[...T,...T].map((t,i)=><span key={i} className="px-8">{t} •</span>)}</div>;
+export default function TelemetryMarquee(){return <section className="py-10 overflow-hidden space-y-3" style={{maskImage:"linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent)"}}><Row/><Row rev/></section>}
